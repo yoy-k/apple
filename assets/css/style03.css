@@ -1,0 +1,69 @@
+/* container */
+.container {width:1000px; margin:0 auto; /* background: #ccc;*/}  /* 모바일 이긴 한데 최대 width 값을 1000px까지 줄게요 */
+/*  row */ /* mobile에서 여백 설정 해주는 것 */
+.row {position: relative; margin:0 20px;} /* position을 줘서 relative기준점을 줄 것이다 */ /* mobile용 여백은 20px줄 수 있고 16px 줄 수 있다 */
+
+/* header */
+/* #header {height: 100px;} */
+
+#header .header-data {
+    font-weight: 600;
+    font-size: 12px;
+    padding-top:30px;
+    display:block;
+    color:#a8a8a8;
+}
+#header .header-title {
+    /* font-weight: 600; */
+    font-weight:bold;
+    font-size: 32px;
+    border-bottom:1px solid #ebebeb;
+    padding-bottom:10px;
+    margin-bottom:15px;
+    
+}
+#header .header-id {
+    position:absolute; right:0; /* bottom:2px; bottom:5px; */ bottom:10px;/* 제플린이나 피그마로 커버할수 없기때문에 사람의 눈으로 확인 */
+    width:40px; height:40px; 
+    background: linear-gradient(156.5deg, #A4A9B5 13.37%, rgba(164, 169, 181, 0) 84.85%), #C4C4C4;
+    border-radius:50% ;
+    /* font-weight: 500; */
+    font-weight:300;
+    font-size: 18px;
+    color:#fff;
+    text-transform: uppercase;
+
+    /* 텍스트 가운데 정렬 */
+    /* 옜날 방법 */
+    text-align: center;
+    line-height:40px;
+
+    /* 요즘 방법 */
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content: center;
+    
+    
+}
+
+/* color: var(--brown-gray) 포트폴리오만들기에서 이거 자주 사용할 것이다*/
+/*
+#header .header-id span {
+    display:block;
+}
+*/
+
+/* mediaquery */
+
+/* 오차가 생길 수 있으니 1020px로 작업 해줄 것이다 */
+@media (max-width:1020px) {
+    .container {width:100%;}
+}
+
+/* bestM 이미지 슬라이드 */
+.bestM {}
+.bestM .best-title {}
+.bestM .best-title .bt-stit {color:#DA5E7C; font-size:12px; line-height:1.67; /* line-height:20px; */}
+.bestM .best-title .bt-tit {font-size:22px; padding-bottom:5px;}
+.bestM .best-title .bt-desc {font-size:22px; color:#818181; font-weight:300; margin-bottom:10px;}
