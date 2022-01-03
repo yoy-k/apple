@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="뮤직 모바일 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <meta name="keywords" content="듣기, 2019년 최고의 음악 100선, Apple Music">
+    <title>Apple Music App</title>
+
+    <!-- meta -->
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="뮤직 모바일 메인">
+    <meta property="og:url" content="https://yoy-k.github.io/apple">
+    <meta property="og:image" content="https://yoy-k.github.io/apple/assets/icon/icon.jpg">
+    <meta property="og:description" content="뮤직 모바일 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="뮤직 모바일 메인">
+    <meta name="twitter:url" content="https://yoy-k.github.io/apple">
+    <meta name="twitter:image" content="https://yoy-k.github.io/apple/assets/icon/icon.jpg">
+    <meta name="twitter:description" content="뮤직 모바일 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+
+     <!-- icon 예전에 반응형에서 해줬다-->
+     <link rel="apple-touch-icon-precomposed" href="https://yoy-k.github.io/apple/assets/icon/icon.jpg">
+     <link rel="apple-touch-icon-precomposed" sizes="96x96" href="https://yoy-k.github.io/apple/assets/icon/icon_96.jpg">
+     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://yoy-k.github.io/apple/assets/icon/icon_144.jpg">
+     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="https://yoy-k.github.io/apple/assets/icon/icon_192.jpg">
+     
+     <!-- style -->
+     <link rel="stylesheet" href="assets/css/reset05.css">
+     <link rel="stylesheet" href="assets/css/fonts05.css">
+     <link rel="stylesheet" href="assets/css/style05.css">     
+
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <time class="header-data">2021년 12월 29일</time>
+                <h1 class="header-title">음악 듣기</h1>
+                <div class="header-id"><span>w</span></div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <main>
+
+    </main>
+    <!-- main --><!-- 핵심으로 보이는 부분 main 태그로 작업 일 단 해줄게요 -->
+    <section class="music">
+        <article class="bestM">
+            <div class="container">
+                <div class="row">
+                    <div class="best">
+                        <div class="best-title">
+                            <span class="bt-stit">BEAT1 ON AIR</span><!-- best-title 약자를 사용해서 bt smalltitle 줄여서 stit -->
+                            <h2 class="bt-tit">Travis Mills</h2>
+                            <p class="bt-desc">L.A’s pop culture authority</p><!-- descrition 약자를 사용 -->
+                        </div>
+                        <picture>
+                            <source srcset="assets/img/bestM01@3x.jpg" media="(min-width: 800px)">
+                            <!-- mediaquery min최소// 800보다 그 이상이 됐을 때는 최고의 이미지로 화면이 커지니깐 그 이상으로 해주는 것-->
+                            <source srcset="assets/img/bestM01@2x.jpg" media="(min-width: 600px)">
+                            <!-- 600부터 800까지 최소 나오게 해라-->
+                            <img src="assets/img/bestM01.jpg" srcset="assets/img/bestM01.jpg 1x, assets/img/bestM01@2x.jpg 2x, assets/img/bestM01@3x.jpg 3x" alt="스티브박기수이미지">
+                            <!-- 기본이미지는 img태그 사용 -->
+                            <!-- 레티나에서도 이미지 최적화되려면 srcset="" 사용해야 한다 -->
+                        </picture> <!-- mobile 전용이니깐 html5태그를 주로 활용해서 작업해준다 -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- //bestM -->
+        <article class="recentM">
+            <div class="container clearfix">
+                <div class="row">
+                    <h2>최근 재생한 음악</h2>
+                    <div class="recent">
+                        <picture>
+                            <source srcset="assets/img/recent_img01@3x.jpg" media="(min-width: 800px)">
+                            <source srcset="assets/img/recent_img01@2x.jpg" media="(min-width: 600px)">
+                            <img src="assets/img/recent_img01.jpg" srcset="assets/img/recent_img01.jpg 1x, assets/img/recent_img01@2x.jpg 2x, assets/img/recent_img02@3x.jpg 3x" alt="스티브박기수이미지">
+                        </picture>
+                        <div class="recent-title">
+                            <span class="rt-stit">퓨어팝</span>
+                            <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                        </div>   
+                    </div>
+                    <!-- //01 -->
+                    <div class="recent">
+                        <picture>
+                            <source srcset="assets/img/recent_img02@3x.jpg" media="(min-width: 800px)">
+                            <source srcset="assets/img/recent_img02@2x.jpg" media="(min-width: 600px)">
+                            <img src="assets/img/recent_img02.jpg" srcset="assets/img/recent_img02.jpg 1x, assets/img/recent_img02@2x.jpg 2x, assets/img/recent_img02@3x.jpg 3x" alt="스티브박기수이미지">
+                        </picture>
+                        <div class="recent-title">
+                            <span class="rt-stit">퓨어팝</span>
+                            <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                        </div>   
+                    </div>
+                    <!-- //02 -->                
+                </div>
+            </div>
+        <!-- //recentM -->
+        <article class="nextM">
+            <div class="container">
+                <div class="row">
+                    <h2>다음 프로그램</h2>
+                    <div class="next-wrap">
+                        <div class="next">
+                            <div class="next-img">
+                                <picture>
+                                    <source srcset="assets/img/next01@3x.jpg" media="(min-width: 800px)">
+                                    <source srcset="assets/img/next01@2x.jpg" media="(min-width: 600px)">
+                                    <img src="assets/img/next01.jpg" srcset="assets/img/next01.jpg 1x, assets/img/next01@2x.jpg 2x, assets/img/next01@3x.jpg 3x" alt="스티브박기수이미지">
+                                </picture>                                
+                            </div>
+                            <div class="next-tit">
+                                <span class="nt-stit">BEATS 1 ON AIR</span>
+                                <h3 class="nt-tit">BEATS 1 ON AIR</h3>
+                                <div class="nt-desc">Paloma Mami talks female empowerment and her song 메롱 바보야 Mami</div>                            
+                            </div>
+                        </div>
+                        <!-- 01 -->
+                        <div class="next">
+                            <div class="next-img">
+                                <picture>
+                                    <source srcset="assets/img/next02@3x.jpg" media="(min-width: 800px)">
+                                    <source srcset="assets/img/next02@2x.jpg" media="(min-width: 600px)">
+                                    <img src="assets/img/next02.jpg" srcset="assets/img/next02.jpg 1x, assets/img/next02@2x.jpg 2x, assets/img/next02@3x.jpg 3x" alt="스티브박기수이미지">
+                                </picture>                                
+                            </div>
+                            <div class="next-tit">
+                                <span class="nt-stit">BEATS 1 ON AIR</span>
+                                <h3 class="nt-tit">BEATS 1 ON AIR</h3>
+                                <div class="nt-desc">Paloma Mami talks female empowerment and her song 메롱 바보야 Mami</div>                            
+                            </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="next">
+                            <div class="next-img">
+                                <picture>
+                                    <source srcset="assets/img/next03@3x.jpg" media="(min-width: 800px)">
+                                    <source srcset="assets/img/next03@2x.jpg" media="(min-width: 600px)">
+                                    <img src="assets/img/next03.jpg" srcset="assets/img/next03.jpg 1x, assets/img/next03@2x.jpg 2x, assets/img/next03@2x.jpg 3x" alt="스티브박기수이미지">
+                                </picture>                                
+                            </div>
+                            <div class="next-tit">
+                                <span class="nt-stit">BEATS 1 ON AIR</span>
+                                <h3 class="nt-tit">BEATS 1 ON AIR</h3>
+                                <div class="nt-desc">Paloma Mami talks female empowerment and her song 메롱 바보야 Mami</div>                            
+                            </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="next">
+                            <div class="next-img">
+                                <picture>
+                                    <source srcset="assets/img/next04@3x.jpg" media="(min-width: 800px)">
+                                    <source srcset="assets/img/next04@2x.jpg" media="(min-width: 600px)">
+                                    <img src="assets/img/next04.jpg" srcset="assets/img/next04.jpg 1x, assets/img/next04@2x.jpg 2x, assets/img/next04@3x.jpg 3x" alt="스티브박기수이미지">
+                                </picture>                                
+                            </div>
+                            <div class="next-tit">
+                                <span class="nt-stit">BEATS 1 ON AIR</span>
+                                <h3 class="nt-tit">BEATS 1 ON AIR</h3>
+                                <div class="nt-desc">Paloma Mami talks female empowerment and her song 메롱 바보야 Mami</div>                            
+                            </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="next">
+                            <div class="next-img">
+                                <picture>
+                                    <source srcset="assets/img/next05@3x.jpg" media="(min-width: 800px)">
+                                    <source srcset="assets/img/next05@2x.jpg" media="(min-width: 600px)">
+                                    <img src="assets/img/next05.jpg" srcset="assets/img/next05.jpg 1x, assets/img/next05@2x.jpg 2x, assets/img/next05@3x.jpg 3x" alt="스티브박기수이미지">
+                                </picture>                                
+                            </div>
+                            <div class="next-tit">
+                                <span class="nt-stit">BEATS 1 ON AIR</span>
+                                <h3 class="nt-tit">BEATS 1 ON AIR</h3>
+                                <div class="nt-desc">Paloma Mami talks female empowerment and her song 메롱 바보야 Mami</div>                            
+                            </div>
+                        </div>
+                        <!-- 05 -->                                                                                               
+                    </div>
+                </div> 
+            </div>
+        </article>
+        <!-- //nextM -->
+    </section>
+    <!-- //music -->
+</body>
+</html>

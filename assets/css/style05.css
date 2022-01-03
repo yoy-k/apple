@@ -1,0 +1,116 @@
+/* container */
+.container {width:1000px; margin:0 auto; /* background: #ccc;*/}  /* 모바일 이긴 한데 최대 width 값을 1000px까지 줄게요 */
+/*  row */ /* mobile에서 여백 설정 해주는 것 */
+.row {position: relative; margin:0 20px;} /* position을 줘서 relative기준점을 줄 것이다 */ /* mobile용 여백은 20px줄 수 있고 16px 줄 수 있다 */
+
+/* header */
+/* #header {height: 100px;} */
+
+#header .header-data {
+    font-weight: 600;
+    font-size: 12px;
+    padding-top:30px;
+    display:block;
+    color:#a8a8a8;
+}
+#header .header-title {
+    /* font-weight: 600; */
+    font-weight:bold;
+    font-size: 32px;
+    border-bottom:1px solid #ebebeb;
+    padding-bottom:10px;
+    margin-bottom:15px;
+    
+}
+#header .header-id {
+    position:absolute; right:0; /* bottom:2px; bottom:5px; */ bottom:10px;/* 제플린이나 피그마로 커버할수 없기때문에 사람의 눈으로 확인 */
+    width:40px; height:40px; 
+    background: linear-gradient(156.5deg, #A4A9B5 13.37%, rgba(164, 169, 181, 0) 84.85%), #C4C4C4;
+    border-radius:50% ;
+    /* font-weight: 500; */
+    font-weight:300;
+    font-size: 18px;
+    color:#fff;
+    text-transform: uppercase;
+
+    /* 텍스트 가운데 정렬 */
+    /* 옜날 방법 */
+    text-align: center;
+    line-height:40px;
+
+    /* 요즘 방법 */
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content: center;
+    
+}
+
+/* color: var(--brown-gray) 포트폴리오만들기에서 이거 자주 사용할 것이다*/
+/*
+#header .header-id span {
+    display:block;
+}
+*/
+
+
+/* bestM  */ /* 이미지 슬라이드 */
+/*
+.bestM {}
+.bestM .best-title {}
+*/
+.bestM .best-title .bt-stit {color:#DA5E7C; font-size:12px; line-height:1.67; /* line-height:20px; */}
+.bestM .best-title .bt-tit {font-size:22px; padding-bottom:5px;}
+.bestM .best-title .bt-desc {font-size:22px; color:#818181; font-weight:300; margin-bottom:10px;}
+
+
+
+/* recentM */
+.recentM {padding:10px 0; margin-top:19px;}
+.recentM .recent {float:left; width:49%; margin-right:2%;}
+/* 앞으로는 float:left; 사용하지 않을 것이다// flex or glid를 사용할 것이다 // 나중에 스크립트 들어가면 다 바뀐다 그냥 틀만 잡아둔 것임 */
+.recentM .recent:last-child {margin-right: 0;}
+.recentM h2 {font-size:20px; font-weight:bold; margin-bottom:12px; margin-top:16px; padding-top:20px; border-top:1px solid #EBEBEB;} 
+.recentM .recent-title .rt-stit {font-size:15px; line-height:1.9;} /* padding을줘도 되지만 line-hieght로 줌 */
+.recentM .recent-title .rt-tit {color:#908F94; font-size:15px; font-weight:300;}
+
+/* nextM */
+.nextM {}
+.nextM h2 {font-size:20px; font-weight:bold; margin-bottom:12px; margin-top:16px; padding-top:20px; border-top:1px solid #EBEBEB;}
+.nextM .next {display:flex; margin-bottom:16px; position:relative;} /* flex 바로 아래 자식들한테 flex가 먹히게 됨 */
+.nextM .next:after {content:''; position:absolute; /* width:100%; */ width: calc(100% - 114px); height:1px; right:0; bottom:-8px; background:#EBEBEB;}
+.nextM .next .next-img {/* flex-shrink:0; */ width:102px; margin-right:12px;}
+
+.nextM .next .next-tit {display:flex; flex-direction:column; justify-content:center;}
+
+.nextM .next .next-tit .nt-stit {color:#DA5E7C; font-size:12px;} /* 애한테는 안먹힘 */
+.nextM .next .next-tit .nt-tit {font-size:16px;}
+.nextM .next .next-tit .nt-desc {
+    font-size:13px; color:#A1A1A3; font-weight:300;
+    /* 두줄 효과 */
+    overflow:hidden;/* 넘쳐나는 부분을 안보여주기 위해서 사용 */
+    text-overflow: ellipsis;
+    display:webkit-box; /* display설정을 박스라고 설정해줄 수 있으나, 아직은 메타버전이라서 웹킷을 붙여서 webkit-box */
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;/* 박스box 방향을 vertical로 줄 것이다 */
+} 
+
+
+
+
+
+
+
+
+/* mediaquery */
+
+/* 오차가 생길 수 있으니 1020px로 작업 해줄 것이다 */
+@media (max-width:1020px) {
+    .container {width:100%;}
+}
+
+
+
+
+
+

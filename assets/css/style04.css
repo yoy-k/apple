@@ -44,7 +44,6 @@
     text-align:center;
     justify-content: center;
     
-    
 }
 
 /* color: var(--brown-gray) 포트폴리오만들기에서 이거 자주 사용할 것이다*/
@@ -54,14 +53,8 @@
 }
 */
 
-/* mediaquery */
 
-/* 오차가 생길 수 있으니 1020px로 작업 해줄 것이다 */
-@media (max-width:1020px) {
-    .container {width:100%;}
-}
-
-/* bestM 이미지 슬라이드 */
+/* bestM  */ /* 이미지 슬라이드 */
 /*
 .bestM {}
 .bestM .best-title {}
@@ -69,3 +62,29 @@
 .bestM .best-title .bt-stit {color:#DA5E7C; font-size:12px; line-height:1.67; /* line-height:20px; */}
 .bestM .best-title .bt-tit {font-size:22px; padding-bottom:5px;}
 .bestM .best-title .bt-desc {font-size:22px; color:#818181; font-weight:300; margin-bottom:10px;}
+
+
+
+/* recentM */
+.recentM {padding:10px 0; margin-top:19px;}
+.recentM .recent {float:left; width:49%; margin-right:2%;}
+/* 앞으로는 float:left; 사용하지 않을 것이다// flex or glid를 사용할 것이다 // 나중에 스크립트 들어가면 다 바뀐다 그냥 틀만 잡아둔 것임 */
+.recentM .recent:last-child {margin-right: 0;}
+.recentM h2 {font-size:20px; font-weight:bold; margin-bottom:12px; margin-top:16px; padding-top:20px; border-top:1px solid #EBEBEB;} 
+.recentM .recent-title .rt-stit {font-size:15px; line-height:1.9;} /* padding을줘도 되지만 line-hieght로 줌 */
+.recentM .recent-title .rt-tit {color:#908F94; font-size:15px; font-weight:300;}
+
+
+
+/* mediaquery */
+
+/* 오차가 생길 수 있으니 1020px로 작업 해줄 것이다 */
+@media (max-width:1020px) {
+    .container {width:100%;}
+}
+
+
+
+
+
+
